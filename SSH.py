@@ -6,7 +6,7 @@ import getpass
 device = {
     'device_type': 'cisco_ios',
     'ip': '192.168.56.101',
-    'username': input('Enter Username (e.g., prne): '), #prne = username
+    'username': getpass.getpass('Enter Username (e.g., prne): '),  # Use getpass for username input
     'password': getpass.getpass('Enter Password (e.g., cisco123!): '),  # Use getpass for password input
     'secret': 'class123!', #class123! = secret passwrd
 }
